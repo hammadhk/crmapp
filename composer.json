@@ -1,6 +1,8 @@
 {
+    "minimum-stability": "dev",
     "require": {
         "codeception/codeception": "*",
-        "fzaninotto/faker": "*"
+        "fzaninotto/faker": "*",
+        "yiisoft/yii2": "*"
     }
 }

@@ -6,8 +6,8 @@ class CRMOperatorSteps extends \AcceptanceTester
 
     public function amInAddCustomerUi()
     {
-	$I = $this;
-	$I->amOnPage('/customers/add');
+		$I = $this;
+		$I->amOnPage('/customers/add');
     }
 
     public function imagineCustomer()
@@ -23,27 +23,27 @@ class CRMOperatorSteps extends \AcceptanceTester
 
     public function fillCustomerDataForm($fieldsData)
     {
-	$I = $this;
-	foreach($fieldsData as $key=>$value)
-	    $I->fillField($key, $value);
+		$I = $this;
+		foreach($fieldsData as $key=>$value)
+		    $I->fillField($key, $value);
     }
 
     public function seeIAmInListCustomerUi()
     {
-	$I = $this;
-	$I->seeCurrentUrlMatches('/customers/');
+		$I = $this;
+		$I->seeCurrentUrlMatches('/customers/');
     }
 
     public function submitCustomerDataForm()
     {
-	$I = $this;
-	$I->click('Submit');
+		$I = $this;
+		$I->click('Submit');
     }
 
     public function amInListCustomersUi()
     {
-	$I = $this;
-	$I->seeCurrentUrlMatches('/customers');
+		$I = $this;
+		$I->seeCurrentUrlMatches('/customers');
     }
 
 }
